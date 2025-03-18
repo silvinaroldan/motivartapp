@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #fafafa; /* Chalk white */
+            padding: 20px;
+            text-align: center;
+            height: calc(100vh - 330px); /* Reduce by 50px */
+        }
+        #screenshots {
+            background-color: #fafafa; /* Lighter chalk white */
+            padding: 20px;
+            box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.5), inset 0 -5px 10px -5px rgba(0, 0, 0, 0.5); /* Shadow inside */
+            height: 250px; /* Set height to 50% less */
+        }
+        .carousel img {
+            width: 90%; /* Reduce size to 70% */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the images */
+        }
+        .app-icon {
+            width: 100px;
+            height: 100px;
+        }
+        .appstore-badge {
+            width: 150px;
+            margin-top: 10px;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #d8bfd8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #dda0dd;
+        }
+        h1, h2, p {
+            
+            color: rgb(59, 58, 58);
+        }
+        #features, #about, footer {
+            background-color: #fafafa; /* Chalk white */
+            padding: 20px;
+        }
+        #features ul {
+            text-align: left; /* Align the list to the left */
+            padding-left: 20px; /* Add padding to the left */
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <br>
+        <br>
+        <img src="images/logo.gif" alt="App Icon" class="app-icon">
+        <br>
+        <br>
+        <br>
+        <h1>MotivArt</h1>
+        <p>Create and place virtual frames <br> with motivational quotes or personal messages</p>
+           
+        <br>
+        <br>
+
+        <a href="https://apps.apple.com/app/id6743174794" target="_blank">
+            <img src="images/appstore.png" alt="Download on the App Store" class="appstore-badge">
+        </a>
+    </header>
+    <section id="screenshots">
+        <h2></h2>
+        <div class="carousel">
+            <div><img src="images/kitchen.png" alt="Screenshot 1"></div>
+            <div><img src="images/living2.png" alt="Screenshot 2"></div>
+            <div><img src="images/living3.png" alt="Screenshot 3"></div>
+        </div>
+    </section>
+    <section id="features">
+    
+        <p align="left">MotivArt is an app designed for Vision OS that allows you to create and display motivational quotes and personal messages or reminders in the form of virtual frames. With a wide selection of inspiring phrases or the option to write your own messages, you can customize and place these frames anywhere in your physical space. Whether at home, in the office, or any environment, MotivArt helps you stay motivated, positive, and focused on your goals. Transform your reality with words that inspire and remind you of the importance of moving forward.</p>
+        <ul>
+            <li>3D Spatial Experience: Place your motivational messages in your 3D space. Position them anywhere in your environment to accompany you throughout the day.</li>
+            <li>Quote Frames: Design your frames with a curated selection of inspiring quotes or write your own to keep motivation and positivity alive in your life.</li>
+            <li>Frame Styles: Choose from a variety of background colors and fonts to match your aesthetic and mood.</li>
+        </ul>    
+        
+    </section>
+    <section id="about">
+        <h2>Contact Us</h2>
+        <p>We are dedicated to providing the best experience for our users.</p>
+        <p>If you have questions or concerns, please visit our <a href="https://www.luddmiapps.com/contact" target="_blank">Contact Us page</a> for assistance</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 LuddmiApps. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                infinite: true,
+                slidesToShow: 3, /* Show 3 slides at once */
+                slidesToScroll: 1,
+                arrows: true,
+                dots: true,
+                draggable: true
+            });
+        });
+    </script>
+</body>
+</html>
